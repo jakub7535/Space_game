@@ -17,6 +17,7 @@ def play_game(screen, player, game):
     while True:
         if game.life > 0:
             game.collision_check(player)
+            game.laser_hit_check()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.display.quit()
@@ -28,13 +29,17 @@ def play_game(screen, player, game):
                         player.x -= 0.5 * player.size
                     elif event.key == pygame.K_RIGHT and player.x < (screen.width - player.size):
                         player.x += 0.5 * player.size
+                    elif event.key == pygame.K_a:
+                        game.create_laser(player.x, player.y, player.size)
+
 
             # when to create new resources and obstacles
             if pixels % screen.height >= 0 and pixels % screen.height < game.speed:
                 game.create_resources_obstacles(screen.width, screen.height)
             pixels += game.speed
 
-            game.update_resources_obtacles_positions(screen.height)
+            game.update_resources_obstacles_positions(screen.height)
+            game.update_lasers_positions(screen.height)
             game.set_level_speed()
             screen.update_screen(game, player)
 

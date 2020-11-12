@@ -18,10 +18,19 @@ class Space_Objects:
 
 # spaceship that player pilot
 class Player(Space_Objects):    
-    def __init__(self, x=0, y=0, size=80 ,path_assets="assets/car/", img="battleship.png", sound="explosion.wav"):
-        super().__init__(x, y, size, path_assets, img, sound)         
-    def shot(self):
-        pass
+    def __init__(self, x=0, y=0, size=80 ,path_assets="assets/car/", img="battleship.png",
+                 sound="explosion.wav"):
+        super().__init__(x, y, size, path_assets, img, sound)
+
+# laser destroys any object
+class Laser(Space_Objects):
+    def __init__(self, player_x=0, player_y=0, player_size=0, x=0, y=0, size=40, path_assets="assets/car/", img="laser.png"):
+        self.x = player_x + int(0.5*(player_size - size))
+        self.y = player_y - int(size)
+        self.size = size
+        self.path_assets = path_assets
+        self.img = pygame.image.load(path_assets + img)
+        self.img = pygame.transform.scale(self.img, (self.size, self.size))
     
 # collision with those objects can change life and score
 class Resources_Obstacles(Space_Objects):

@@ -19,7 +19,11 @@ class Screen:
     
     def draw_resources_obstacles(self, resources_obstacles_list):
         for ro in resources_obstacles_list:
-            self.screen.blit(ro.img, (ro.x, ro.y))  
+            self.screen.blit(ro.img, (ro.x, ro.y))
+
+    def draw_laser(self, laser_list):
+        for laser in laser_list:
+            self.screen.blit(laser.img, (laser.x, laser.y))
 
     def draw_player(self, player):
         self.screen.blit(player.img, (player.x, player.y))  
@@ -38,6 +42,7 @@ class Screen:
     def update_screen(self, game, player):
         self.refresh_background()
         self.draw_resources_obstacles(game.resources_obstacles_list)
+        self.draw_laser(game.laser_list)
         self.draw_player(player)
         self.draw_label("Score", game.score, self.width-200, self.height-40, color=Color.RED)
         self.draw_label("Life", game.life, self.width-200, self.height-80, color=Color.RED)
