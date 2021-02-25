@@ -5,5 +5,5 @@ Our goal is to collect as many points as we can, you collect them by catching ge
 If you'll be good enough pilot you can cover yourself with glory and earn places in ranks of 5 the best pilots in the galaxy!!!
  
  ## Demo of a game
- <p align="center"><img src="assets/assets_readmy/demo2.gif"\></p>
+ <p align="center"><img src="assets/assets_readme/demo2.gif"\></p>
 
