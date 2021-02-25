@@ -7,3 +7,11 @@ If you'll be good enough pilot you can cover yourself with glory and earn places
  ## Demo of a game
  <p align="center"><img src="assets/assets_readme/demo2.gif"\></p>
 
+## How to run 
+To run this program intall required liberaries via Pip or Anaconda(rocomended).
+Then run main.py and enjoy game.
+
+```bash
+pip install requirements.txt
+python main.py
+
