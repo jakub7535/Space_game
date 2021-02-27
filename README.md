@@ -7,3 +7,15 @@ If you'll be good enough pilot you can cover yourself with glory and earn places
  ## Demo of a game
  <p align="center"><img src="assets/assets_readme/demo2.gif"\></p>
 
+## How to run 
+To run this program:
+1. Clone repository from github and enter the project.
+2. Install required liberaries via Pip or Anaconda(rocomended).
+3. Run main.py and enjoy game.
+
+```bash
+git clone https://github.com/jakub7535/Space_game.git
+cd Space_game
+pip install -r requirements.txt
+python main.py
+
