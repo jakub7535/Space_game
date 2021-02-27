@@ -12,7 +12,7 @@ class Game:
     
     resources_obstacles =[ 
             {"img":"comet.png", "sound":"explosion.wav", "size":60, "life":-20, "score":0},
-            {"img":"ufo.png", "sound":"explosion.wav", "size":80, "life":-15, "score":0},
+            {"img":"empire_ship.png", "sound":"explosion.wav", "size":80, "life":-15, "score":0},
             {"img":"diamond.png", "sound":"explosion.wav", "size":60, "life":0, "score":20},
             {"img": "tools.png", "sound": "explosion.wav", "size": 40, "life": 10, "score": 0}
         ]
