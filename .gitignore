@@ -1,3 +1,4 @@
+.gitignore
 trash.py
 watevs/
 venv/
@@ -5,6 +6,6 @@ __pycache__/
 .idea/
 assets/assets_trash
 *.png
-!assets/*.png
+!assets/**/*.png
 *.jpg
-!assets/*.jpg
+!assets/**/*.jpg
