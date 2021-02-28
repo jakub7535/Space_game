@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .gitignore
 trash.py
 watevs/
@@ -9,3 +10,8 @@ assets/assets_trash
 !assets/**/*.png
 *.jpg
 !assets/**/*.jpg
+=======
+venv/
+__pycache__/
+.idea/
+>>>>>>> 4d1cfde3aa24174ebd8e44c4047e025a51a8f14e
