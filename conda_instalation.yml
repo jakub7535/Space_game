@@ -1,0 +1,10 @@
+name: yolo_tutorial
+
+dependencies:
+  - python==3.8
+  - pip
+  - pip:
+    - opencv-python==4.5.1.48
+    - numpy==1.19.2
+    - jupyter
+    - ipykernel
